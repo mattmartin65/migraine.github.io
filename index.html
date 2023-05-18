@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        const chart = new Chart(document.getElementById("myChart"), {    type: "line",    data: {        labels: ["1 Jan", "15 Jan", "30 Jan", "5 Feb", "15 Feb", "26 Feb", "4 Mar", "10 Mar", "21 Mar", "31 Mar", ""],        datasets: [            {                label: "16 Mar 2018",                borderColor: "#4A5568",                data: [600, 400, 620, 300, 200, 600, 230, 300, 200, 200, 100, 1200],                fill: false,                pointBackgroundColor: "#4A5568",                borderWidth: "3",                pointBorderWidth: "4",                pointHoverRadius: "6",                pointHoverBorderWidth: "8",                pointHoverBorderColor: "rgb(74,85,104,0.2)",            },        ],    },    options: {        legend: {            position: false,        },        scales: {            yAxes: [                {                    gridLines: {                        display: false,                    },                    display: false,                },            ],        },    },});
+    </script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="overflow-hidden"><nav class="flex items-center justify-between py-3.5 xl:py-2.5 px-7 bg-neutral-50"><div class="w-full xl:w-auto px-2 xl:mr-10">
+        <div class="flex items-center justify-between">
+          <a class="inline-flex items-center h-7" href="#"></a>
+          <div class="xl:hidden">
+            <button class="navbar-burger text-gray-400 hover:text-gray-300 focus:outline-none">
+              <svg width="20" height="12" viewbox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 2H19C19.2652 2 19.5196 1.89464 19.7071 1.70711C19.8946 1.51957 20 1.26522 20 1C20 0.734784 19.8946 0.48043 19.7071 0.292893C19.5196 0.105357 19.2652 0 19 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2ZM19 10H1C0.734784 10 0.48043 10.1054 0.292893 10.2929C0.105357 10.4804 0 10.7348 0 11C0 11.2652 0.105357 11.5196 0.292893 11.7071C0.48043 11.8946 0.734784 12 1 12H19C19.2652 12 19.5196 11.8946 19.7071 11.7071C19.8946 11.5196 20 11.2652 20 11C20 10.7348 19.8946 10.4804 19.7071 10.2929C19.5196 10.1054 19.2652 10 19 10ZM19 5H1C0.734784 5 0.48043 5.10536 0.292893 5.29289C0.105357 5.48043 0 5.73478 0 6C0 6.26522 0.105357 6.51957 0.292893 6.70711C0.48043 6.89464 0.734784 7 1 7H19C19.2652 7 19.5196 6.89464 19.7071 6.70711C19.8946 6.51957 20 6.26522 20 6C20 5.73478 19.8946 5.48043 19.7071 5.29289C19.5196 5.10536 19.2652 5 19 5Z" fill="currentColor"></path></svg></button>
+          </div>
+        </div>
+        </div>
+        <div class="hidden xl:block w-full md:w-auto px-2 mr-auto">
+          <ul class="flex items-center">
+      <li class="mr-10"><a class="group inline-block" href="index.html"><span class="text-sm font-medium group-hover:text-transparent group-hover:bg-gradient-purple-top bg-clip-text font-semibold">Diary
+            </span></a></li>
+            <li class="mr-10"><a class="group inline-block" href="tasks.html"><span class="text-sm font-medium text-transparent bg-clip-text text-black">Tasks</span></a></li>
+            <li class="mr-10"><a class="group inline-block" href="medication.html"><span class="text-sm text-neutral-600 font-medium group-hover:text-transparent group-hover:bg-gradient-purple-top bg-clip-text">Medication</span></a></li>
+            <li class="mr-10"><a class="group inline-block" href="education.html"><span class="text-sm text-neutral-600 font-medium group-hover:text-transparent group-hover:bg-gradient-purple-top bg-clip-text text-purple-500" contenteditable="true">Education</span></a></li>
+          </ul>
+      </div>
+        <div class="hidden xl:block w-full md:w-auto px-2">
+          <div class="md:flex items-center">
+            <div class="w-full md:w-auto mb-6 md:mb-0">
+              <div class="flex flex-wrap items-center">
+                <div class="relative flex items-center mr-4 w-52 border border-neutral-100 rounded-lg focus-within:border-neutral-600 hover:bg-gray-50">
+                  <input class="w-full px-4 pr-12 py-2 text-sm text-neutral-400 placeholder-neutral-400 bg-transparent outline-none" id="horizontalNav4-1" type="text" placeholder="Search..."><div class="absolute right-4">
+                  <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.2197 16.2803C15.5126 16.5732 15.9874 16.5732 16.2803 16.2803C16.5732 15.9874 16.5732 15.5126 16.2803 15.2197L15.2197 16.2803ZM11.7803 10.7197C11.4874 10.4268 11.0126 10.4268 10.7197 10.7197C10.4268 11.0126 10.4268 11.4874 10.7197 11.7803L11.7803 10.7197ZM12 7.5C12 9.98528 9.98528 12 7.5 12V13.5C10.8137 13.5 13.5 10.8137 13.5 7.5H12ZM7.5 12C5.01472 12 3 9.98528 3 7.5H1.5C1.5 10.8137 4.18629 13.5 7.5 13.5V12ZM3 7.5C3 5.01472 5.01472 3 7.5 3V1.5C4.18629 1.5 1.5 4.18629 1.5 7.5H3ZM7.5 3C9.98528 3 12 5.01472 12 7.5H13.5C13.5 4.18629 10.8137 1.5 7.5 1.5V3ZM16.2803 15.2197L11.7803 10.7197L10.7197 11.7803L15.2197 16.2803L16.2803 15.2197Z" fill="#B8C1CC"></path></svg>
+      </div>
+                </div>
+                <a class="inline-block mr-4" href="#">
+                  <div class="flex items-center justify-center w-8 h-8 bg-neutral-100 rounded-full">
+                    <svg width="18" height="18" viewbox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 12.75V13.5C15.3033 13.5 15.5768 13.3173 15.6929 13.037C15.809 12.7568 15.7448 12.4342 15.5303 12.2197L15 12.75ZM3 12.75L2.46967 12.2197C2.25517 12.4342 2.191 12.7568 2.30709 13.037C2.42318 13.3173 2.69665 13.5 3 13.5V12.75ZM4.0537 11.6963L4.58403 12.2266H4.58403L4.0537 11.6963ZM7.5 4.00606L7.74993 4.71319C8.04963 4.60726 8.25 4.32392 8.25 4.00606H7.5ZM10.5 4.00606H9.75C9.75 4.32392 9.95037 4.60726 10.2501 4.71319L10.5 4.00606ZM3.53033 13.2803L4.58403 12.2266L3.52337 11.166L2.46967 12.2197L3.53033 13.2803ZM5.25 10.6188V8.25H3.75V10.6188H5.25ZM12.75 8.25V10.6188H14.25V8.25H12.75ZM13.416 12.2266L14.4697 13.2803L15.5303 12.2197L14.4766 11.166L13.416 12.2266ZM4.58403 12.2266C5.01044 11.8002 5.25 11.2219 5.25 10.6188H3.75C3.75 10.8241 3.66848 11.0209 3.52337 11.166L4.58403 12.2266ZM12.75 10.6188C12.75 11.2219 12.9896 11.8002 13.416 12.2266L14.4766 11.166C14.3315 11.0209 14.25 10.8241 14.25 10.6188H12.75ZM7.25007 3.29893C5.21199 4.01929 3.75 5.96295 3.75 8.25H5.25C5.25 6.6184 6.29243 5.22834 7.74993 4.71319L7.25007 3.29893ZM10.2501 4.71319C11.7076 5.22834 12.75 6.6184 12.75 8.25H14.25C14.25 5.96295 12.788 4.01929 10.7499 3.29893L10.2501 4.71319ZM11.25 4.00606V3.75H9.75V4.00606H11.25ZM6.75 3.75V4.00606H8.25V3.75H6.75ZM9 1.5C7.75736 1.5 6.75 2.50736 6.75 3.75H8.25C8.25 3.33579 8.58579 3 9 3V1.5ZM11.25 3.75C11.25 2.50736 10.2426 1.5 9 1.5V3C9.41421 3 9.75 3.33579 9.75 3.75H11.25ZM10.5 13.5C10.5 14.3284 9.82843 15 9 15V16.5C10.6569 16.5 12 15.1569 12 13.5H10.5ZM9 15C8.17157 15 7.5 14.3284 7.5 13.5H6C6 15.1569 7.34315 16.5 9 16.5V15ZM15 12H11.25V13.5H15V12ZM12 13.5V12.75H10.5V13.5H12ZM11.25 12H6.75V13.5H11.25V12ZM6.75 12H3V13.5H6.75V12ZM7.5 13.5V12.75H6V13.5H7.5Z" fill="#0C1523"></path></svg>
+      </div></a><a class="inline-flex items-center" href="#">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </nav><div class="navbar-menu fixed top-0 left-0 bottom-0 z-50 hidden">
+        <div class="navbar-backdrop fixed top-0 left-0 w-full h-full bg-gray-800 opacity-50"></div>
+        <nav class="fixed w-full h-full max-w-xss bg-white"><div class="flex flex-wrap items-center justify-between px-7 py-2 pb-1 border-b border-gray-200">
+          <div class="w-auto"><a class="inline-block" href="#"><img src="images/mihublogo.png" alt=""></a></div>
+          <div class="w-auto"><a class="text-neutral-300 hover:text-neutral-400" href="#">
+            </a></div>
+          </div>
+          <div class="py-6 h-full overflow-y-auto">
+            <div class="flex flex-col flex-wrap px-7 -m-2.5">
+      
+              <div class="w-auto p-2.5"><a class="flex flex-wrap items-center" href="index.html"><img class="mr-3" src="dashy-assets/images/loader-rec.svg" alt=""><p class="hover:text-neutral-700 font-medium">Diary</p></a></div>
+              <div class="w-auto p-2.5"><a class="flex flex-wrap items-center" href="tasks.html"><img class="mr-3" src="dashy-assets/images/lifebuoy.svg" alt=""><p class="hover:text-neutral-700 font-medium">Tasks</p></a></div>
+              <div class="w-auto p-2.5"><a class="flex flex-wrap items-center" href="medication.html"><img class="mr-3" src="dashy-assets/images/folder-open.svg" alt=""><p class="hover:text-neutral-700 font-medium">Medications</p></a></div>
+              <div class="w-auto p-2.5"><a class="flex flex-wrap items-center" href="education.html"><img class="mr-3" src="dashy-assets/images/user-circle.svg" alt=""><p class="hover:text-neutral-700 font-medium" contenteditable="false">Education</p></a></div>
+      
+      
+      
+            </div>
+          </div>
+        </nav>
+      </div>
+      </section>
+                
+      <section class="py-4 bg-white overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <h1 class="font-heading mb-1 text-2xl font-semibold">Symptom Diary</h1>
+          <p class="text-sm text-neutral-500">Data is live form the patient app. Select the three month period.</p>
+        </div>
+      </section>
+                
+      <section class="py-4 overflow-hidden"><div class="container px-4 mx-auto">
+        <div class="px-6 pt-5 pb-7 bg-white border rounded-xl">
+          <div class="flex flex-wrap justify-between mb-7 -m-2">
+            <div class="w-auto p-2">
+              <h3 class="font-heading text-lg font-semibold" contenteditable="false">Headache record - bar graph matches the calendar</h3>
+            </div>
+            <div class="w-auto p-2">
+              
+      </div>
+          </div>
+          <div class="flex flex-wrap divide-y -m-3">
+            <div class="w-full p-3">
+              <div class="flex flex-wrap items-center -m-3">
+                <div class="flex-1 p-3">
+                  <div class="px-2.5 py-2 rounded-lg opacity-70 w-2/3 bg-green-100" contenteditable="false">
+                    <p class="font-medium text-md text-green-800" contenteditable="false"> 62 Days all headaches</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="w-full p-3">
+              <div class="flex flex-wrap items-center -m-3">
+                <div class="flex-1 p-3">
+                  <div class="px-2.5 py-2 rounded-lg bg-yellow-100 w-1/3">
+                    <p class="font-medium text-md text-yellow-800">26 Days moderate</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="w-full p-3">
+              <div class="flex flex-wrap items-center -m-3">
+                <div class="flex-1 p-3">
+                  <div class="px-2.5 py-2 rounded-lg w-3/12 bg-red-100">
+                    <p class="font-medium text-gray-900 text-md text-red-800" contenteditable="false">12 Days severe</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        </div>
+      </section>
+                
+      <section class="py-4 bg-white overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <h1 class="font-heading mb-1 text-2xl font-semibold">Calendar</h1>
+          <p class="text-sm text-neutral-500">Tap on a day to see more information</p>
+        </div>
+      </section>
+                
+      <div>
+        <div class="container px-4 py-4 mx-auto">
+          <div class="">
+            <div class="container">
+      
+              <div>
+                <header class="flex items-center justify-between border-b border-gray-200 py-4 px-6 rounded-t-2xl bg-white"><h1 class="text-base font-semibold leading-6 text-gray-900">
+                  <time datetime="2023">2023</time></h1>
+                  <div class="flex items-center">
+                    <div class="relative flex items-center rounded-md bg-white shadow-sm md:items-stretch">
+                      <div class="pointer-events-none absolute inset-0 rounded-md ring-1 ring-inset ring-gray-300" aria-hidden="true"></div>
+                      <button type="button" class="flex items-center justify-center rounded-l-md py-2 pl-3 pr-4 text-gray-400 hover:text-gray-500 focus:relative md:w-9 md:px-2 md:hover:bg-gray-50">
+                        <span class="sr-only">Previous year</span>
+                        <svg class="h-5 w-5" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd"></path></svg></button>
+                      <button type="button" class="hidden px-3.5 text-sm font-semibold text-gray-900 hover:bg-gray-50 focus:relative md:block">Months</button>
+                      <span class="relative -mx-px h-5 w-px bg-gray-300 md:hidden"></span>
+                      <button type="button" class="flex items-center justify-center rounded-r-md py-2 pl-4 pr-3 text-gray-400 hover:text-gray-500 focus:relative md:w-9 md:px-2 md:hover:bg-gray-50">
+                        <span class="sr-only">Next year</span>
+                        <svg class="h-5 w-5" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd"></path></svg></button>
+                    </div>
+      
+                    <div class="relative ml-6 md:hidden">
+                      <button type="button" class="-mx-2 flex items-center rounded-full border border-transparent p-2 text-gray-400 hover:text-gray-500" id="menu-0-button" aria-expanded="false" aria-haspopup="true">
+                        <span class="sr-only">Open menu</span>
+                        <svg class="h-5 w-5" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3 10a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM8.5 10a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM15.5 8.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"></path></svg></button>
+      
+                      <!--
+                                  Dropdown menu, show/hide based on menu state.
+      
+                                  Entering: "transition ease-out duration-100"
+                                    From: "transform opacity-0 scale-95"
+                                    To: "transform opacity-100 scale-100"
+                                  Leaving: "transition ease-in duration-75"
+                                    From: "transform opacity-100 scale-100"
+                                    To: "transform opacity-0 scale-95"
+                                -->
+                      <div class="absolute right-0 z-10 mt-3 w-36 origin-top-right divide-y divide-gray-100 overflow-hidden rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-0-button" tabindex="-1">
+      
+      
+      
+                      </div>
+                    </div>
+                  </div>
+                </header><div class="bg-white">
+                <div class="mx-auto grid max-w-3xl grid-cols-1 gap-x-8 sm:grid-cols-2 sm:px-6 xl:max-w-none xl:grid-cols-3 xl:px-8 gap-y-8 py-8 g:grid-cols-3" contenteditable="false">
+                  <section class="text-center"><h2 class="text-sm font-semibold text-gray-900">January</h2>
+                    <div class="mt-6 grid grid-cols-7 text-xs leading-6 text-gray-500">
+                      <div>M</div>
+                      <div>T</div>
+                      <div>W</div>
+                      <div>T</div>
+                      <div>F</div>
+                      <div>S</div>
+                      <div>S</div>
+                    </div>
+                    <div class="isolate mt-2 grid grid-cols-7 gap-px rounded-lg bg-gray-200 text-sm shadow ring-1 ring-gray-200">
+                      <!--
+                                    Always include: "py-1.5 hover:bg-gray-100 focus:z-10"
+                                    Is current month, include: "bg-white text-gray-900"
+                                    Is not current month, include: "bg-gray-50 text-gray-400"
+      
+                                    Top left day, include: "rounded-tl-lg"
+                                    Top right day, include: "rounded-tr-lg"
+                                    Bottom left day, include: "rounded-bl-lg"
+                                    Bottom right day, include: "rounded-br-lg"
+                                  -->
+                      <button type="button" class="rounded-tl-lg bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <!--
+                                      Always include: "mx-auto flex h-7 w-7 items-center justify-center rounded-full"
+                                      Is today, include: "bg-indigo-600 font-semibold text-white"
+                                    -->
+                        <time datetime="2021-12-27" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">27</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2021-12-28" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">28</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2021-12-29" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">29</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2021-12-30" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">30</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2021-12-31" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">31</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-01" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">1</time></button>
+                      <button type="button" class="rounded-tr-lg bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-02" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">2</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-03" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">3</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-04" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">4</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-05" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">5</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-06" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200">6</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-07" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-300">7</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-08" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">8</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-09" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">9</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-10" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">10</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-11" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">11</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10 bg-blue-200 border-2 border-blue-400">
+                        <time datetime="2022-01-12" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full font-semibold border-blue-500 bg-green-100">12</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-13" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">13</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-14" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">14</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-15" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">15</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-16" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">16</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-17" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">17</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-18" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">18</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-19" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">19</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-20" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200">20</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-21" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">21</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-22" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">22</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-23" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">23</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-24" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">24</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-25" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">25</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-26" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">26</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-27" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">27</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-28" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200 bg-green-100">28</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-29" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-100">29</time></button>
+                      <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-30" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">30</time></button>
+                      <button type="button" class="rounded-bl-lg bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-01-31" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">31</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-02-01" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">1</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-02-02" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">2</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-02-03" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">3</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-02-04" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">4</time></button>
+                      <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-02-05" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">5</time></button>
+                      <button type="button" class="rounded-br-lg bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                        <time datetime="2022-02-06" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">6</time></button>
+                    </div>
+                  </section><section class="text-center"><h2 class="text-sm font-semibold text-gray-900">February</h2>
+                  <div class="mt-6 grid grid-cols-7 text-xs leading-6 text-gray-500">
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                    <div>S</div>
+                  </div>
+                  <div class="isolate mt-2 grid grid-cols-7 gap-px rounded-lg bg-gray-200 text-sm shadow ring-1 ring-gray-200">
+                    <!--
+                                    Always include: "py-1.5 hover:bg-gray-100 focus:z-10"
+                                    Is current month, include: "bg-white text-gray-900"
+                                    Is not current month, include: "bg-gray-50 text-gray-400"
+      
+                                    Top left day, include: "rounded-tl-lg"
+                                    Top right day, include: "rounded-tr-lg"
+                                    Bottom left day, include: "rounded-bl-lg"
+                                    Bottom right day, include: "rounded-br-lg"
+                                  -->
+                    <button type="button" class="rounded-tl-lg bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <!--
+                                      Always include: "mx-auto flex h-7 w-7 items-center justify-center rounded-full"
+                                      Is today, include: "bg-indigo-600 font-semibold text-white"
+                                    -->
+                      <time datetime="2021-12-27" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">27</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-28" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">28</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-29" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">29</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-30" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">30</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-31" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">31</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-01" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">1</time></button>
+                    <button type="button" class="rounded-tr-lg bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-02" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">2</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-03" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">3</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-04" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200">4</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-05" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">5</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-06" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">6</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-07" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">7</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-08" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">8</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-09" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">9</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-10" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">10</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-11" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">11</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-12" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">12</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-13" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">13</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-14" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">14</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-15" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">15</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-16" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">16</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-17" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">17</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-18" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">18</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-19" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">19</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-20" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200">20</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-21" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">21</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-22" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">22</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-23" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">23</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-24" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">24</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-25" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">25</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-26" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">26</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-27" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">27</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-28" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">28</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-29" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">29</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-30" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">30</time></button>
+                    <button type="button" class="rounded-bl-lg bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-31" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">31</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-01" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">1</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-02" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">2</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-03" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">3</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-04" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">4</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-05" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">5</time></button>
+                    <button type="button" class="rounded-br-lg bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-06" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">6</time></button>
+                  </div>
+                  </section><section class="text-center"><h2 class="text-sm font-semibold text-gray-900">March</h2>
+                  <div class="mt-6 grid grid-cols-7 text-xs leading-6 text-gray-500">
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                    <div>S</div>
+                  </div>
+                  <div class="isolate mt-2 grid grid-cols-7 gap-px rounded-lg bg-gray-200 text-sm shadow ring-1 ring-gray-200">
+                    <!--
+                                    Always include: "py-1.5 hover:bg-gray-100 focus:z-10"
+                                    Is current month, include: "bg-white text-gray-900"
+                                    Is not current month, include: "bg-gray-50 text-gray-400"
+      
+                                    Top left day, include: "rounded-tl-lg"
+                                    Top right day, include: "rounded-tr-lg"
+                                    Bottom left day, include: "rounded-bl-lg"
+                                    Bottom right day, include: "rounded-br-lg"
+                                  -->
+                    <button type="button" class="rounded-tl-lg bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <!--
+                                      Always include: "mx-auto flex h-7 w-7 items-center justify-center rounded-full"
+                                      Is today, include: "bg-indigo-600 font-semibold text-white"
+                                    -->
+                      <time datetime="2021-12-27" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">27</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-28" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">28</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-29" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">29</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-30" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">30</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2021-12-31" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">31</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-01" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-100">1</time></button>
+                    <button type="button" class="rounded-tr-lg bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-02" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">2</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-03" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">3</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-04" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200 bg-green-100">4</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-05" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">5</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-06" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200">6</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-07" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-300">7</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-08" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">8</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-09" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">9</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-10" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">10</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-11" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">11</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-12" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">12</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-13" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">13</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-14" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">14</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-15" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">15</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-16" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">16</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-17" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">17</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-18" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">18</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-19" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200 bg-green-100">19</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-20" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200 bg-green-100">20</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-21" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-200 bg-green-100">21</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-22" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-100">22</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-23" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200 bg-green-100">23</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-24" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">24</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-25" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">25</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-26" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-100">26</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-27" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">27</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-28" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-yellow-200">28</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-29" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-100">29</time></button>
+                    <button type="button" class="bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-30" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-green-100">30</time></button>
+                    <button type="button" class="rounded-bl-lg bg-white py-1.5 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-01-31" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full bg-red-100">31</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-01" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">1</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-02" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">2</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-03" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">3</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-04" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">4</time></button>
+                    <button type="button" class="bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-05" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">5</time></button>
+                    <button type="button" class="rounded-br-lg bg-gray-50 py-1.5 text-gray-400 hover:bg-gray-100 focus:z-10">
+                      <time datetime="2022-02-06" class="mx-auto flex h-7 w-7 items-center justify-center rounded-full">6</time></button>
+                  </div>
+                  </section><!-- More items... --></div>
+                </div>
+              </div>
+      
+      
+            </div>
+          </div>
+        </div>
+      </div>
+                
+      <section class="py-4 bg-white overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <h1 class="font-heading mb-1 text-2xl font-semibold">Number of headaches per week</h1>
+          <p class="text-sm text-neutral-500">Green line is the average</p>
+        </div>
+      </section>
+                
+      <section class="py-4 overflow-hidden"><div class="container px-4 mx-auto">
+        <div class="p-6 bg-white border rounded-xl">
+      
+      
+      
+          <img src="images/My-Project-png-1684411724066.webp" alt="" class="rounded mx-auto">
+      </div>
+        </div>
+      </section>
+                
+      <section class="py-4 bg-white overflow-hidden">
+        <div class="container px-4 mx-auto">
+          <h1 class="font-heading mb-1 text-2xl font-semibold">Pain Location</h1>
+          <p class="text-sm text-neutral-500">Regions correspond to patients record</p>
+        </div>
+      </section>
+                
+      <div>
+        <div class="container mx-auto">
+          <section class="py-4 overflow-hidden mt-6"><div class="container px-4 mx-auto">
+            <div class="flex flex-wrap items-center justify-between -m-2">
+              
+              <div class="w-auto p-2"><a class="flex flex-wrap items-center hover:text-neutral-500" href="#">
+                </a></div>
+            </div>
+      
+            <div class="flex flex-wrap -m-3">
+              <div class="w-full sm:w-1/4 p-3"><a class="inline-block bg-white overflow-hidden rounded-xl" href="#"><img class="w-60" src="images/Untitled-12.png" alt=""><div class="p-6">
+                <p class="mb-8 text-xl font-medium">Forehead right</p>
+                <div class="flex flex-wrap items-center justify-between -m-2">
+                  <div class="w-auto p-2">
+                    <p class="text-neutral-500">Anterior view</p>
+                  </div>
+                  <div class="w-auto p-2"></div>
+                </div>
+                </div></a></div>
+      
+              <div class="w-full sm:w-1/4 p-3"><a class="inline-block h-full bg-white overflow-hidden rounded-xl border-2" href="#"><img class="w-60" src="images/Untitled-4.png" alt=""><div class="p-6">
+                <p class="mb-8 text-xl font-medium">Left temple</p>
+                <div class="flex flex-wrap items-center justify-between -m-2">
+                  <div class="w-auto p-2">
+                    <p class="text-neutral-500">Lateral view</p>
+                  </div>
+                  <div class="w-auto p-2"></div>
+                </div>
+                </div></a></div>
+              <div class="w-full sm:w-1/4 p-3"><a class="inline-block h-full bg-white overflow-hidden rounded-xl border-2" href="#"><img class="w-60" src="images/Untitled-5.png" alt=""><div class="p-6">
+                <p class="mb-8 text-xl font-medium">Left Back of neck</p>
+                <div class="flex flex-wrap items-center justify-between -m-2">
+                  <div class="w-auto p-2">
+                    <p class="text-neutral-500">posterior view</p>
+                  </div>
+                  <div class="w-auto p-2"></div>
+                </div>
+                </div></a></div>
+              <div class="w-full sm:w-1/4 p-3"><a class="inline-block h-full bg-white overflow-hidden rounded-xl border-2" href="#"><img class="w-60" src="images/Untitled-22.png" alt=""><div class="p-6">
+                <p class="mb-8 text-xl font-medium">Right temple</p>
+                <div class="flex flex-wrap items-center justify-between -m-2">
+                  <div class="w-auto p-2">
+                    <p class="text-neutral-500">Lateral view</p>
+                  </div>
+                  <div class="w-auto p-2"></div>
+                </div>
+                </div></a></div>
+            </div>
+            </div>
+          </section>
+      </div>
+      </div>
+                
+      <div class="mx-auto">
+      
+      </div>
+                
+      
+      
+                
+      <div>
+        <section class="py-4 overflow-hidden"><div class="container px-4 mx-auto">
+          <div class="pt-5 bg-neutral-50 overflow-hidden border border-neutral-100 rounded-xl border-2">
+            <div>
+              <div class="flex flex-wrap items-center justify-between px-6 -m-2 mb-6">
+                <div class="w-auto p-2">
+                  <h3 class="font-heading text-lg text-neutral-600 font-semibold" contenteditable="false">12 January</h3>
+                </div>
+                <div class="w-auto p-2"><a href="#">
+                  </a></div>
+              </div>
+              <div class="w-full overflow-x-auto">
+                <table class="w-full min-w-max">
+      <thead><tr class="text-left">
+      <th class="px-6 w-1/12">
+      
+                  </th>
+                  <th class="px-6">
+                    <div class="pb-3.5"><a class="text-sm text-gray-500 text-opacity-70 font-medium" href="#" contenteditable="false">Result</a></div>
+                  </th>
+                  <th class="px-6">
+                    <div class="pb-3.5"><a class="text-sm text-gray-500 text-opacity-70 font-medium" href="#" contenteditable="false">Notes</a></div>
+                  </th>
+      
+      
+                  </tr></thead>
+      <tbody>
+      <tr>
+      <td class="py-4 bg-light">
+                  <span class="text-sm font-medium" contenteditable="false">
+                    <img src="images/23234.png" alt="" class="rounded h-12 object-scale-down w-auto px-1 mx-auto"></span>
+                  </td>
+                  <td class="py-4 px-6 bg-light">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Moderate -not impacting my daily life</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">functional impact</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-light"><span class="text-sm font-medium">Worsened</span></td>
+      
+      
+                  </tr>
+      <tr>
+      <td class="py-4 bg-white"><span class="text-sm font-medium" contenteditable="false"><img src="images/duration.png" alt="" class="rounded mx-auto h-12 w-12"></span></td>
+                  <td class="py-4 px-6 bg-white">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">2-4 hours</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">Duration</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-white"><span class="text-sm font-medium"></span></td>
+      
+      
+                  </tr>
+      <tr>
+      <td class="py-4 bg-light"><span class="text-sm font-medium"><img src="images/dfgverfg.png" alt="" class="rounded mx-auto opacity-70 w-12 h-auto"></span></td>
+                  <td class="py-4 px-6 bg-light">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Morning</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">When it started</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-light"><span class="text-sm font-medium">
+                    </span></td>
+                  </tr>
+      <tr>
+      <td class="py-4 bg-white">
+                  <span class="text-sm font-medium"><img src="images/severity.png" alt="" class="rounded mx-auto w-auto h-12"></span>
+                  </td>
+                  <td class="py-4 px-6 bg-white">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Uncomfortable 6/10</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false"><div>
+      <span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Arial; font-size: 13px; white-space: pre-wrap;" class="text-gray-700">Severity</span><br>
+      </div></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-white"><span class="text-sm font-medium" contenteditable="false">peaked at 6</span></td>
+                  </tr>
+      <tr>
+      <td class="py-4 bg-light"><span class="text-sm font-medium"><img src="images/type.png" alt="" class="h-12 rounded-full w-12 mx-auto"></span></td>
+                  <td class="py-4 px-6 bg-light">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Throbbing</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">Pain Type</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-light"><span class="text-sm font-medium">
+                    </span></td>
+                  </tr>
+      <tr>
+      <td class="py-4 bg-white">
+                  <span class="text-sm font-medium"><img src="images/efubcec.png" alt="" class="rounded h-12 mx-auto w-12"></span>
+                  </td>
+                  <td class="py-4 px-6 bg-white">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Strong smells</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">Triggers</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-white"><span class="text-sm font-medium" contenteditable="false">Perfume</span></td>
+                  </tr>
+      <tr>
+      <td class="py-4 bg-light"><span class="text-sm font-medium"><img src="images/iducwirb.png" alt="" class="rounded mx-auto h-12 w-auto"></span></td>
+                  <td class="py-4 px-6 bg-light">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Paracetamol, Relpax</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">Medication Taken</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-light"><span class="text-sm font-medium">
+                    </span></td>
+                  </tr>
+      <tr>
+      <td class="py-4 bg-white">
+                  <span class="text-sm font-medium"><img src="images/eron.png" alt="" class="rounded mx-auto h-12 w-auto"></span>
+                  </td>
+                  <td class="py-4 px-6 bg-white">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">-4 days</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">Mestruation</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-white" contenteditable="false"></td>
+                  </tr>
+      <tr>
+      <td class="py-4 bg-light"><span class="text-sm font-medium"><img src="images/headache-1.png" alt="" class="rounded mx-auto w-auto h-12"></span></td>
+                  <td class="py-4 px-6 bg-light">
+                    <div class="flex flex-wrap items-center -m-2">
+      
+                      <div class="w-auto p-2">
+                        <span class="block font-semibold" contenteditable="false">Nausea, Noise sensativity</span><span class="block font-medium text-sm text-gray-500 text-opacity-70" contenteditable="false">Associated symptoms</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="py-4 px-6 bg-light"><span class="text-sm font-medium">
+                    </span></td>
+                  </tr>
+      </tbody>
+      </table>
+      </div>
+            </div>
+          </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/charts-demo.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var options = {
+  series: [{
+  data: [75, 50, 10, 80]
+}],
+  chart: {
+  type: 'bar',
+  height: 450
+},
+plotOptions: {
+  bar: {
+    borderRadius: 4,
+    horizontal: true,
+  }
+},
+dataLabels: {
+  enabled: true
+},
+xaxis: {
+  categories: [ 'Total Days', 'Moderate',
+     'Severe', 'Previous'
+  ],
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#chart"), options);
+chart.render();
+    </script>
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <section class="py-4 overflow-hidden"><div class="container px-4 mx-auto">
+          <div class="p-6 bg-white border rounded-xl">
+      
+      
+      
+      
+            
+            
+              
+                <title>Page title</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"><link rel="stylesheet" href="css/tailwind/tailwind.min.css"><link rel="stylesheet" href="css/main.css"><link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png"><script src="js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/apexcharts"></script><body>
+      
+                <div class="bg-white rounded-2xl min-w-full ">
+                  <section class="border-gray-50 flex-auto "><div id="chart"></div>
+                  </section></div>
+      
+              
+              <script>
+                var options = {
+                  series: [{
+                    data: [75, 50, 10, 80]
+                  }],
+                  chart: {
+                    type: 'bar',
+                    height: 300
+                  },
+                  plotOptions: {
+                    bar: {
+                      borderRadius: 4,
+                      horizontal: true,
+                    }
+                  },
+                  dataLabels: {
+                    enabled: true
+                  },
+                  xaxis: {
+                    categories: [ 'All days', 'Moderate',
+                                 'Severe', 'Previous'
+                                ],
+                  }
+                };
+      
+                var chart = new ApexCharts(document.querySelector("#chart"), options);
+                chart.render();
+      
+              </script></body></div></div></section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/charts-demo.js"></script>
+</body>
+</html>
+

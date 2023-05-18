@@ -1,0 +1,22 @@
+.apexcharts-svg {
+  border-radius: 20px;
+  text-transform: none;
+  min-width: 100%;
+  position: relative;
+  Z-Index: null;
+  background-color: rgba(0,204,255,0);
+  text-shadow: rgba(0,204,255,.05) 0 0 0
+}
+.apexcharts-svg.hovering-zoom {
+  font-family: Arial,sans-serif;
+  font-weight: 100;
+  text-align: start;
+  word-break: normal;
+  display: flow-root;
+  width: 100%;
+  min-width: 100%;
+  overflow: auto;
+  cursor: auto;
+  mix-blend-mode: hard-light
+}
+
